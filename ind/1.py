@@ -11,9 +11,9 @@ if __name__ == '__main__':
         t.append(int(input()))
     t = tuple(t)
     k = 0
-    for i in range(len(t)-2):
-        print(t[i])
-        if t[i+1] > t[i] and t[i+1] > t[i+2]:
+    for i,x in enumerate(t):
+        print(x)
+        if t[i+1] > x and t[i+1] > t[i+2]:
             k += 1
             print('Есть, его номер(начинается с 1) = ', i+1, i+2, i+3)
             break
